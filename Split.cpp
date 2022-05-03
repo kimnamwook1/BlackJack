@@ -1,4 +1,3 @@
-#include <iostream>
 #include "Split.h"
 
 void Split()
