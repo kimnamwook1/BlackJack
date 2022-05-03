@@ -1,16 +1,31 @@
 #include <iostream>
 
+
 using namespace std;
 
 int main()
 {
-	int Number = 0;
-	cin >> Number;
+	srand(time(NULL));
 
-	for (int i = 1; i < 10; i++)
+		int Array[10] = { 0, };
+
+	for (int i = 0; i < 10; ++i)
 	{
-		cout << Number << "x" << i << "=" << Number * i; 
-		cout << '\n' << endl;
+		Array[i] = (rand()% 10 + 1);
+		for (int j = 0; j < i; ++j)
+		{
+			if (Array[i] == Array[j])
+			{
+				i--;
+				break;
+			}
+		}
+
 	}
-		return 0;
+	for (int i = 0; i < 10; ++i)
+	{
+		cout << Array[i] << endl;
+	}
+
+	return 0;
 }
