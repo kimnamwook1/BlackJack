@@ -17,7 +17,10 @@ int main(void)
 
 	Draw();
 
+	cout << "HelloWorld" << endl;
+
 	return 0;
+
 }
 
 
