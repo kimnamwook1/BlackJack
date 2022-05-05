@@ -1,11 +1,10 @@
-#include <iostream>
 #include "Draw.h"
 
 using namespace std;
 
 void Draw()
 {
-	cout << "Player" << '\t' << "  AI" << endl;
+	cout << "Player" << '\t' << "  Dealer" << endl;
 	for (int i = 0; i < 4; ++i)
 	{
 		int Type = SplitCard[i] / 13;
@@ -47,6 +46,19 @@ void Draw()
 		}
 
 		cout << ((i % 2 == 0) ? '\t' : '\n');
+	}
+
+	if (Player[0] + Player[1] < Dealer[0] + Dealer[1])
+	{
+		cout << "Dealer win" << endl;
+	}
+	else if (Player[0] + Player[1] > Dealer[0] + Dealer[1])
+	{
+		cout << "Player win" << endl;
+	}
+	else
+	{
+		cout << "Draw" << endl;
 	}
 
 }
