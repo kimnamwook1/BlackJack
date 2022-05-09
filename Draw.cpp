@@ -75,7 +75,6 @@ void Draw()
 	}
 	else
 	{
-
 		cout << "Player Win" << endl;
 	}
 
