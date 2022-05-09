@@ -17,10 +17,7 @@ int main(void)
 
 	Draw();
 
-	
-
 	return 0;
-
 }
 
 

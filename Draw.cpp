@@ -1,5 +1,4 @@
 #include "Draw.h"
-#include "Common.h"
 
 using namespace std;
 
@@ -59,25 +58,26 @@ void Draw()
 	cout << PlayerSum << ":" << DealerSum << endl;
 
 	if (DealerSum > 21)
-
+	{
 		cout << "Player Win" << endl;
+	}
 
-	else if (PlayerSum < 21 && DealerSum < 21)
-
-		if (PlayerSum > DealerSum)
-
+	else if (PlayerSum <= 21 && DealerSum <= 21)
+	{
+		if (PlayerSum >= DealerSum)
+		{
 			cout << "Player Win" << endl;
-
-		else if (PlayerSum == DealerSum)
-
-			cout << "Pealer Win" << endl;
-
+		}
 		else
+		{
 			cout << "Dealer Win" << endl;
+		}
+	}
 	else
+	{
 
 		cout << "Player Win" << endl;
-
+	}
 
 
 }
