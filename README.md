@@ -9,4 +9,5 @@ Get 3 card and the player or AI who is near the number of 21 will win this game.
 * Initialize
 * Shuffle
 * Split
+* Rule
 * Draw
